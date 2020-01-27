@@ -1,0 +1,160 @@
+/* reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*css for index.html*/
+.container-flex {
+	display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
+}
+
+.container-flex h2 {
+	font-size: 40px;
+}
+
+.container-flex  .header-logo {
+	flex: 1;
+}
+
+.container-flex .header-title {
+  font-family: HelveticaNeue;
+  font-size: 60px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.container-flex .header-description {
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+}
+
+.btn-ticket {
+	width: 200px;
+	height: 40px;
+	border: none;
+	margin: 40px auto 0;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: #007791;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn-ticket:hover {
+	background-color: #fff;
+	color: #007791;
+	border: 2px solid #007791;
+}
+
+.bg-header {
+	background-image: url("../images/banner/header-banner.png");
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* palestrantes */
+.section-speakers {
+	display: flex;
+	flex-direction: column;
+	background-color: #29303b;
+	color: #fff;
+}
+
+.speakers-row {
+	display: flex;
+    justify-content: space-evenly;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.speakers-description {
+	padding: 20px;
+}
+
+.speakers-description p {
+	font-family: HelveticaNeue;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-top: 10px;
+}
+
+.section-infos {
+	background-color: #f7f7f7;
+}
+
+.section-infos .infos {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.footer {
+	padding: 20px;
+	height: 203px;
+	background-image: linear-gradient(to right, #1e0046, #cc0037 63%, #de7324);
+	color: #fff;
+}
+/* body {
+    background-color: #faf6ed;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+} */
