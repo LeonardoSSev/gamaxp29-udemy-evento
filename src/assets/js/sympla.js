@@ -1,14 +1,30 @@
-const API_KEY = require('../../../config/api-key.json').apiKey;
-
-const HEADERS = {
-  'Content-Type': 'application/json',
-  'accept': 'application/json',
-  's_token': API_KEY
-};
-
-const REQUEST_OPTIONS = {
-  method: 'GET',
-  headers: HEADERS
+async function listEvents() {
+  try {
+    const response = await fetch(getBaseUrl(), getRequestOptions());
+  
+    return await response.json();
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-const BASE_URL = 'https://api.sympla.com.br/public/v3/events/{event_id}/affiliates';
+function getBaseUrl() {
+  return 'https://api.sympla.com.br/public/v3/events';
+}
+
+function getRequestOptions() {
+  return {
+    method: 'GET',
+    mode: 'cors',
+    cache: 'no-cache',
+    headers: getHeaders()
+  };
+}
+
+function getHeaders() {
+  return  {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    's_token': getApiKey()
+  };
+}
