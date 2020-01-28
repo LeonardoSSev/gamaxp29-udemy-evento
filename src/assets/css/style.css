@@ -203,6 +203,20 @@ table {
     flex-direction: column;	
   }
 
+  .partners {
+	width: 523px;
+	height: 38px;
+	font-family: HelveticaNeue;
+	font-size: 32px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.22;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+  }
+
 /* body {
     background-color: #faf6ed;
     color: #222;
