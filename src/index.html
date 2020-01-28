@@ -13,7 +13,7 @@
     <section class="section-header bg-header">
         <div class="container-flex">
             <div class="header-logo">
-                <img src="assets/images/logo-gwit.svg" alt="logo branco da grow in tech">
+                <img class="img-logo"src="assets/images/logo-gwit.svg" alt="logo branco da grow in tech">
             </div>
             <div class="header-title">
                 <h1>
@@ -88,18 +88,27 @@
         </div>
     </section>
     <section class="section-infos">
-            <div class="container-flex">
-                <h2>Informações</h2>
+            <div class="container-flex event-infos">
+                <h2 class="infos-text">Informações</h2>
                 <div class="infos">
                     <label>Nome do evento:</label>
                     <label>Dia:</label>
-                    <label>horario</label>
-                    <label>Local</label>
+                    <label>horario:</label>
+                    <label>Local:</label>
                 </div>
-            <div>
-                <h3>Como chegar</h3>
-                <div class="map">
+            <div class="map-container">
+                <h3 class="como-chegar">Como chegar</h3>
+                <div id="map" class="map">
                     Aqui vai o mapa do google (js)
+                    <script>
+                        var map;
+                        function initMap() {
+                          map = new google.maps.Map(document.getElementById('map'), {
+                            center: {lat: -34.397, lng: 150.644},
+                            zoom: 8
+                          });
+                        }
+                      </script>
                 </div>
             </div>
             <button class="btn-ticket">Comprar ingresso</button>
@@ -109,4 +118,5 @@
         <h2>Parceiros e Patrocinadores</h2>
     </footer>
 </body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1KrA7Q7moLssCpbKMMaEx5efhI57q_0w&callback=initMap" async defer></script>
 </html>
