@@ -142,6 +142,10 @@ table {
 .section-infos .infos {
 	display: flex;
 	flex-direction: column;
+	font-size: 24px;
+	color: #707070;
+	line-height: 1.67;
+	font-family: HelveticaNeue;
 }
 
 
@@ -151,6 +155,54 @@ table {
 	background-image: linear-gradient(to right, #1e0046, #cc0037 63%, #de7324);
 	color: #fff;
 }
+
+.event-infos{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: unset;
+}
+
+.infos-text {
+	width: 250px;
+	height: 38px;
+	font-family: 'HelveticaNeue';
+	font-size: 32px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.22;
+	letter-spacing: normal;
+	text-align: left;
+	color: #707070;
+  }
+
+  .como-chegar {
+	width: 200px;
+	height: 38px;
+	font-family: HelveticaNeue;
+	font-size: 32px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.22;
+	letter-spacing: normal;
+	text-align: left;
+	color: #707070;
+  }
+
+  .map{
+	position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+
+  .map-container{
+	width: 100%;
+    display: flex;
+    flex-direction: column;	
+  }
+
 /* body {
     background-color: #faf6ed;
     color: #222;
