@@ -9,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -21,7 +21,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -103,7 +103,7 @@ table {
 
 .bg-header {
 	background-image: url("../images/banner/header-banner.png");
-	height: 600px;
+	min-height: 600px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -133,6 +133,15 @@ table {
 	font-size: 18px;
 	line-height: 1.5;
 	margin-top: 10px;
+}
+
+.speakers-socials {
+	background-color: #fff;
+	width: 130px;
+	padding: 8px 0;
+	margin-top: 20px;
+	text-align: center;
+
 }
 
 .section-infos {
@@ -200,7 +209,7 @@ table {
   .map-container{
 	width: 100%;
     display: flex;
-    flex-direction: column;	
+    flex-direction: column;
   }
 
   .partners {
