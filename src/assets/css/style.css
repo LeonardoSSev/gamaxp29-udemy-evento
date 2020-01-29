@@ -165,7 +165,6 @@ border-spacing: 0;
 
 .footer {
 	padding: 20px;
-	height: 203px;
 	background-image: linear-gradient(to right, #1e0046, #cc0037 63%, #de7324);
 	color: #fff;
 	display: flex;
@@ -206,6 +205,7 @@ border-spacing: 0;
 	font-weight: bold; 
 	line-height: 1.22;
 	color: #ffffff;
+	margin-bottom: 5%;
 }
 
 @media (max-width: 768px) {
@@ -254,9 +254,11 @@ border-spacing: 0;
     flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .footer .logos img{
 	height: 60px;
-    width: auto;
+	width: auto;
+	margin-top: 5%;
 }
