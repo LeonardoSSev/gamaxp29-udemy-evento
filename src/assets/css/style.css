@@ -109,6 +109,12 @@ table {
 	background-size: cover;
 }
 
+.programation-list {
+	color: #707070;
+	font-size: 1.3em;
+	line-height: 2.1;
+}
+
 /* palestrantes */
 .section-speakers {
 	display: flex;
