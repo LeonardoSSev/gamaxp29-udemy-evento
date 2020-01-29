@@ -4,7 +4,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -13,45 +13,45 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
 
 /*css for index.html*/
 .container-flex {
 	display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
 	flex-wrap: wrap;
 	padding: 20px 0;
 }
@@ -60,20 +60,19 @@ table {
 	font-size: 40px;
 }
 
-.container-flex  .header-logo {
+.container-flex  .header-logo, .speakers-row  img  {
 	flex: 1;
+	display: block;
+	width: 100%;
 }
 
 .container-flex .header-title {
-  font-family: HelveticaNeue;
-  font-size: 60px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
+	font-family: 'HelveticaNeue';
+	font-size: 2.5em;
+	font-weight: bold;
+	line-height: 1.23;
+	color: #ffffff;
+	text-align: center;
 }
 
 .container-flex .header-description {
@@ -125,26 +124,27 @@ table {
 
 .speakers-row {
 	display: flex;
-    justify-content: space-evenly;
+	justify-content: space-evenly;
 	align-items: center;
 	padding: 10px 0;
 }
+
 
 .speakers-description {
 	padding: 20px;
 }
 
 .speakers-description p {
-	font-family: HelveticaNeue;
+	font-family: 'HelveticaNeue';
 	font-size: 18px;
 	line-height: 1.5;
 	margin-top: 10px;
 }
 
 .speakers-socials {
-  background-color: rgba(300, 300, 300, 0.1);
-  width: 30px;
-  height: 0px;
+	background-color: rgba(300, 300, 300, 0.1);
+	width: 30px;
+	height: 0px;
 	margin-top: 1em;
 	text-align: center;
 }
@@ -159,7 +159,7 @@ table {
 	font-size: 24px;
 	color: #707070;
 	line-height: 1.67;
-	font-family: HelveticaNeue;
+	font-family: 'HelveticaNeue';
 }
 
 
@@ -172,69 +172,44 @@ table {
 
 .event-infos{
 	display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: unset;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: unset;
 }
 
-.infos-text {
-	width: 250px;
-	height: 38px;
+.infos-text, .como-chegar  {
+	font-family: 'HelveticaNeue';
+	font-size: 32px;
+	line-height: 1.22;
+	color: #707070;
+}
+
+.map{
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+}
+
+.map-container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.partners {
 	font-family: 'HelveticaNeue';
 	font-size: 32px;
 	font-weight: bold;
-	font-stretch: normal;
-	font-style: normal;
 	line-height: 1.22;
-	letter-spacing: normal;
-	text-align: left;
-	color: #707070;
-  }
-
-  .como-chegar {
-	width: 200px;
-	height: 38px;
-	font-family: HelveticaNeue;
-	font-size: 32px;
-	font-weight: 500;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 1.22;
-	letter-spacing: normal;
-	text-align: left;
-	color: #707070;
-  }
-
-  .map{
-	position: relative;
-    overflow: hidden;
-    height: 200px;
-  }
-
-  .map-container{
-	width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .partners {
-	width: 523px;
-	height: 38px;
-	font-family: HelveticaNeue;
-	font-size: 32px;
-	font-weight: bold;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 1.22;
-	letter-spacing: normal;
-	text-align: left;
 	color: #ffffff;
-  }
+}
 
-/* body {
-    background-color: #faf6ed;
-    color: #222;
-    -webkit-font-smoothing: antialiased;
-    display: grid;
-    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
-} */
+@media (max-width: 768px) {
+	.speakers-row {
+		flex-wrap: wrap;
+	}
+	.image-description img {
+		display: block;
+		width: 100%;
+	}
+}
