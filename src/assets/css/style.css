@@ -142,12 +142,11 @@ table {
 }
 
 .speakers-socials {
-	background-color: #fff;
-	width: 130px;
-	padding: 8px 0;
-	margin-top: 20px;
+  background-color: rgba(300, 300, 300, 0.1);
+  width: 30px;
+  height: 0px;
+	margin-top: 1em;
 	text-align: center;
-
 }
 
 .section-infos {
