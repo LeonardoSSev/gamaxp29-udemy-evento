@@ -219,6 +219,12 @@ border-spacing: 0;
 		margin-bottom: 2rem;
 		width: 100%;
 	}
+
+	.img-logo{
+		border-right: none !important;
+		margin-right: none !important;
+		margin-bottom: none !important;
+	}
 }
 
 .sympla-widget-container{
@@ -230,4 +236,10 @@ border-spacing: 0;
 
 #sympla-widget-774621{
 	max-width: 1000px !important;
+}
+
+.img-logo{
+	border-right: 7px solid #FFFFFF;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
