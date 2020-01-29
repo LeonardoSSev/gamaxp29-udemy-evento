@@ -40,7 +40,7 @@
     </section>
     <section class="section-programation">
         <div class="container-flex">
-            <div>
+            <div class="programation-list">
                 <h2>Programação</h2>
                 <div>
                     <ul>
@@ -65,6 +65,9 @@
                     </ul>
                     <p>** O evento também contará com exibição online</p>
                 </div>
+            </div>
+            <div>
+                <img src="assets/images/banner/about.svg" alt="" width="600">
             </div>
         </div>
     </section>
@@ -162,11 +165,11 @@
                         var map;
                         function initMap() {
 
-                        var evento = {lat: -23.561414, lng: -46.6558819};
+                            var evento = { lat: -23.561414, lng: -46.6558819 };
 
-                        var map = new google.maps.Map(document.getElementById('map'), {zoom: 14, center: evento});
+                            var map = new google.maps.Map(document.getElementById('map'), { zoom: 14, center: evento });
 
-                        var marker = new google.maps.Marker({position: evento, map: map});
+                            var marker = new google.maps.Marker({ position: evento, map: map });
                         }
                     </script>
                 </div>
