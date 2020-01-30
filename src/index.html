@@ -75,11 +75,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 </p>
             </div>
             <div style="margin: 0 auto;">
-                <a href="https://www.sympla.com.br/transformacao-inovacao-e-carreiras-digitais__774621" target="_blank">
-                    <button class="btn-ticket">
+                    <button id="scrollToWidget" class="btn-ticket">
                         Comprar ingresso
                     </button>
-                </a>
             </div>
         </div>
     </section>
@@ -207,7 +205,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </script>
                 </div>
             </div>
-            <div class="sympla-widget-container">
+            <div id="sympla" class="sympla-widget-container">
                 <div id="sympla-widget-774621" height="auto"></div> <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/774621"></script>
             </div>
         </div>
@@ -225,4 +223,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1KrA7Q7moLssCpbKMMaEx5efhI57q_0w&callback=initMap" async
     defer></script>
 
+<script>
+    //função para "scrollar" suavemente ate o widget compra de ingresso
+    let btnTo = document.getElementById('scrollToWidget');
+
+    btnTo.addEventListener('click', function(e) {
+        let symplaWidget =  document.getElementById('sympla')
+        symplaWidget.scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+</script>
 </html>
