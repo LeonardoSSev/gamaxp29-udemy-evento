@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Event - Grow In Tech</title>
 
+    <!-- Global site tag (gtag.js) - Google Ads: 672464254 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-672464254"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-672464254');
+    </script>
+ <!-- Event snippet for Website lead conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-672464254/xoA-CJqHz7sBEP7608AC',
+            'event_callback': callback
+        });
+        return false;
+        }
+    </script>
+
     <!-- Facebook Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -49,11 +75,9 @@
                 </p>
             </div>
             <div style="margin: 0 auto;">
-                <a href="https://www.sympla.com.br/transformacao-inovacao-e-carreiras-digitais__774621" target="_blank">
-                    <button class="btn-ticket">
+                    <button id="scrollToWidget" class="btn-ticket">
                         Comprar ingresso
                     </button>
-                </a>
             </div>
         </div>
     </section>
@@ -181,7 +205,7 @@
                     </script>
                 </div>
             </div>
-            <div class="sympla-widget-container">
+            <div id="sympla" class="sympla-widget-container">
                 <div id="sympla-widget-774621" height="auto"></div> <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/774621"></script>
             </div>
         </div>
@@ -199,4 +223,15 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1KrA7Q7moLssCpbKMMaEx5efhI57q_0w&callback=initMap" async
     defer></script>
 
+<script>
+    //função para "scrollar" suavemente ate o widget compra de ingresso
+    let btnTo = document.getElementById('scrollToWidget');
+
+    btnTo.addEventListener('click', function(e) {
+        let symplaWidget =  document.getElementById('sympla')
+        symplaWidget.scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+</script>
 </html>
